@@ -1,0 +1,20 @@
+<%= form_tag session_path do %>
+  <p> Fill up your information </p>
+  <p>
+    <label>Name:</label>
+    <%= email_field_tag 'name' %>
+  </p>
+  <p>
+    <label>Email:</label>
+    <%= email_field_tag 'email' %>
+  </p>
+  <p>
+    <label> Password:</label>
+    <%= password_field_tag 'password' %>
+  </p>
+  <p>
+    <label> Repeat your psassword:</label>
+    <%= password_field_tag 'password' %>
+  </p>
+  <p><%= submit_tag 'login' %></p>
+<% end %>
